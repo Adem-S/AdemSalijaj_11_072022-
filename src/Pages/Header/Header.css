@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin: 1em 4em;
+    margin-bottom: 2em;
+    justify-content: space-between;
+}
+
+.header__logo {
+   height: 3em;
+}
+
+.header__nav {
+    display: flex;
+    font-size: 1.2em;
+    gap: 3em;
+}
+
+.header__nav a:hover {
+    text-decoration: underline;
+}
+
+.header__nav--active {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .header {
+        margin: 1em 2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header__logo {
+        height: 2em;
+    }
+    .header__nav {
+        display: flex;
+        font-size: 1em;
+        gap: 1em;
+    }
+}

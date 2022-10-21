@@ -1,0 +1,40 @@
+.banner {
+    background: center/cover no-repeat;
+    border-radius: 1.5em;
+    min-height: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.banner p {
+    font-size: 3em;
+    color: white;
+}
+  
+
+@media only screen and (max-width: 780px) {
+    .banner p {
+        font-size: 2em;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        min-height: 7em;
+        border-radius: 1em;
+    }
+    .banner {
+        justify-content: start;
+    }
+
+    .banner p {
+        font-size: 1.5em;
+        color: white;
+    }
+
+    .banner span {
+     display: block;
+    }
+}

@@ -1,0 +1,16 @@
+.app {
+    flex: 1;
+    margin: 0 4em;
+}
+
+@media only screen and (max-width: 900px) {
+    .app {
+        margin: 0em 2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .app {
+        margin: 0em 1em;
+    }
+}

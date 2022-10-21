@@ -1,0 +1,93 @@
+.housing__presentation {
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+
+.housing__presentation1 {
+    flex: 1;
+}
+
+.housing__presentation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.housing__presentation h1{
+    font-size: 2em;
+    margin-bottom: 0.1em;
+}
+
+.housing__presentation h1{
+    font-size: 2em;
+    margin-bottom: 0.1em;
+}
+
+.housing__host {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0.5em;
+    flex: 1;
+}
+
+.housing__host p {
+    width: min-content;
+    text-align: end;
+    margin-top: 0.4em;
+}
+
+.housing__host img {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;    
+}
+
+.housing__tag {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+}
+
+.housing__content {
+    display: flex;
+    gap: 5em;
+    margin-top: 2em;
+}
+
+.housing__equipments {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+@media only screen and (max-width: 700px) {
+    .housing__presentation h1{
+        font-size: 1.8em;
+    }
+
+    .housing__presentation {
+        flex-direction: column;
+    }
+
+    .housing__presentation2 {
+        margin-top: 1em;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .housing__host {
+        align-items: center;
+    }
+    .housing__host p {
+        margin-top: 0;
+    }
+    
+    .housing__content {
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 2em;
+    }
+}

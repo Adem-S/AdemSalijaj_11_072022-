@@ -1,0 +1,23 @@
+.error-page {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-page__text {
+    font-size: 2em;
+}
+
+.error-page__number {
+    margin-top: 0.2em;
+    font-size: 15em;
+    font-weight: bolder;
+}
+
+.error-page a {
+    margin-top: 8em;
+    text-decoration: underline;
+}

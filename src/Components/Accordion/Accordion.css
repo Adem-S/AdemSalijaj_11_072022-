@@ -1,0 +1,47 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+.accordion__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF6060;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    color: white;
+    border-radius: 0.5em;
+    z-index: 1;
+    transition: background-color 0.2s ease-out;
+}
+  
+.accordion__button:hover {
+    background-color: #F25C5C;
+}
+  
+.accordion__button img {
+    width: 1em;
+}
+  
+.accordion__text {
+    background-color: #F6F6F6;
+    color: #FF6060;
+    border-radius: 0.5em;
+    height: 0;
+    transform: translateY(-20%);
+    overflow: hidden;
+    transition: transform 0.2s ease-out;
+    transform-origin: top;
+}
+  
+.accordion--open img {
+    transform: rotate(180deg);
+}
+  
+.accordion--open > .accordion__text {
+    height: auto;
+    padding: 2em 1em;
+    transform: translateY(-5%);
+}

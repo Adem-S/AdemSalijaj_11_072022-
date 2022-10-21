@@ -1,13 +1,91 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  color: #FF6060;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+button {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+}
+
+input {
+  border: none;
+}
+
+h1,h2 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  background-color: #FF6060;
+  color: #F6F6F6;
+  padding: 0.4em 2em;
+  border-radius: 1em;
+  font-size: small;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+}
+
+.rating img {
+  height: 2em;
+  width: 2em;
+}
+
+.rating--0 img:nth-child(n+1) {
+  filter: grayscale(100%);
+}
+.rating--1 img:nth-child(n+2) {
+  filter: grayscale(100%);
+}
+.rating--2 img:nth-child(n+3) {
+  filter: grayscale(100%);
+}
+.rating--3 img:nth-child(n+4) {
+  filter: grayscale(100%);
+}
+.rating--4 img:nth-child(n+5) {
+  filter: grayscale(100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .rating img {
+    width: 1.5em;
+    height: 1.5em;
+  }
 }
